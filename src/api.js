@@ -40,13 +40,13 @@ export class API {
         "Authorization": this.generateAuthToken()
       }
     })
-    // .then(r => r.data);
-    .then(r => {
-      return {
-        id: r.data.id,
-        type: r.data.type,
-      }
-    });
+    .then(r => r.data);
+    // .then(r => {
+    //   return {
+    //     id: r.data.id,
+    //     type: r.data.type,
+    //   }
+    // });
   }
 }
 
