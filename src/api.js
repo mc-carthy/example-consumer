@@ -44,7 +44,7 @@ export class API {
     .then(r => {
       return {
         id: r.data.id,
-        id: r.data.type,
+        type: r.data.type,
       }
     });
   }
